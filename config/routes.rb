@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  get '/', to: 'application#index'
+  root to: 'application#index'
+    # ルートパス （get '/', to: '[コントローラー名]#[アクション名]'） にリクエストする。
+
   post '/', to: 'application#create'
 end
