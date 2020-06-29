@@ -2,7 +2,7 @@
   <h1>To Do List</h1>
 
   <div class="submit_form">
-    <%= form_tag(root_path, method: :post) do %> 
+    <%= form_with model: @post, url: application_index_path, local: true do |form| %>
       <input type="text" name="content" class="submit_form__content"> 
       <input type="submit" value="投稿する" class="submit_form__submit">
     <% end %>
@@ -12,6 +12,7 @@
     <ul class="post_data">
       <li class="post_data__date">
         ● 投稿日：<%= post.created_at %>
+        <%= link_to "削除", application_path(post.id), method: :delete, id: '' %>
       </li>
       <li class="post_data__content">
         <%= post.content %>
