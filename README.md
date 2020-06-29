@@ -1,24 +1,14 @@
-# README
+# To Do List イメージ画像
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![](https://user-images.githubusercontent.com/63486456/85990285-bff42f80-ba2c-11ea-96c7-a77d6935e846.png)
 
-Things you may want to cover:
+# 目的
 
-* Ruby version
+- 私自身 個人で開発したアプリケーションの第１弾です。
+- 初めての Web アプリケーションということで、一言のメモが記録できるものを制作しました。
 
-* System dependencies
+# 機能
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- 投稿フォームに内容を記入すると、その内容が保存される。
+  - 未記入の状態で「投稿する」ボタンを押しても投稿されないようにバリデーションを設定しています。
+- 不要なメッセージは「削除」ボタンを押すことで、テーブルから削除することができます。
